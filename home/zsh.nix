@@ -13,7 +13,7 @@
       export CLICOLOR="1"
       export EMAIL="uh@uleenucks.de"
       eval "$(direnv hook zsh)"
-      eval "$(keychain --systemd --eval --agents ssh,gpg id_ed25519 DDE9D7938ED4549F9B25FF5A26030CB15C34002F)"
+      eval "$(keychain --systemd --eval --agents ssh,gpg id_ed25519 github_ed25519 DDE9D7938ED4549F9B25FF5A26030CB15C34002F)"
     '';
 
     initExtra = /* zsh */ ''

@@ -1,7 +1,6 @@
 { pkgs, ... }: {
   home.packages = with pkgs; [
     # Browsers
-    firefox
     brave
 
     # Misc. Unix-ish tools
@@ -19,6 +18,8 @@
     pv
     fzf
     unzip
+    termite
+    gnumake
 
     # Linters and formatters
     shellcheck
@@ -34,9 +35,30 @@
     kbfs
     keychain
     pass
+    genpass
     pinentry
 
     # Office
     libreoffice-fresh
+    thunderbird
+
+    # eBook library
+    calibre
+
+    # Image Processing
+    scrot
+    nomacs
+    gv
+
+    # Video Player
+    vlc
+
+    # LaTeX
+    texlive.combined.scheme-full
+    pythonPackages.pygments
+    opensans-ttf
+
+    # i3 stuff
+    i3status
   ];
 }

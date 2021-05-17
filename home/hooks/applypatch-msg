@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# shellcheck source=/dev/null
+. /usr/lib/git-core/git-sh-setup
+commitmsg="$(git rev-parse --git-path hooks/commit-msg)"
+test -x "$commitmsg" && exec "$commitmsg" "${1+$@}"
+:

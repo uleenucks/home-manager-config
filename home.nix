@@ -8,6 +8,8 @@
     ./home/zsh.nix
     ./home/git.nix
     ./home/keybase.nix
+    ./home/gui.nix
+    #./config.nix
   ];
 
   # Let Home Manager install and manage itself.
@@ -17,6 +19,10 @@
   # paths it should manage.
   home.username = "uh";
   home.homeDirectory = "/home/uh";
+
+  home.sessionPath = [
+    "/home/uh/.config/bin"
+  ];
 
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage

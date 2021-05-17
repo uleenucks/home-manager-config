@@ -1,0 +1,72 @@
+
+# i3status configuration file.
+# see "man i3status" for documentation.
+
+# It is important that this file is edited as UTF-8.
+# The following line should contain a sharp s:
+# ß
+# If the above line is not correctly displayed, fix your editor first!
+
+general {
+  colors = true
+  interval = 5
+}
+
+order += "disk /"
+order += "disk /home"
+order += "run_watch Docker"
+order += "run_watch DHCP"
+order += "wireless wlp2s0"
+order += "battery 0"
+order += "cpu_temperature 0"
+order += "load"
+order += "tztime berlin"
+
+wireless wlp2s0 {
+  format_up = "W: (%quality at %essid) %ip"
+  format_down = "W: down"
+}
+
+battery 0 {
+  format = "%percentage %remaining"
+  format_down = "No bat"
+  status_chr = "⚇ CHR"
+  status_bat = "⚡BAT"
+  status_full = "☻ FULL"
+  path = "/sys/class/power_supply/BAT%d/uevent"
+  low_threshold = 10
+  integer_battery_capacity = true
+  last_full_capacity = true
+  hide_seconds = true
+}
+
+run_watch Docker {
+  pidfile = "/run/docker.pid"
+}
+
+run_watch DHCP {
+  pidfile = "/var/run/systemd/netif/leases/*"
+}
+
+tztime berlin {
+  format = "%Y-%m-%d %H:%M %Z"
+  #format_time = "%H:%M %Z"
+  timezone = "Europe/Berlin"
+  hide_if_equals_localtime = false
+}
+
+load {
+  format = "%1min"
+}
+
+cpu_temperature 0 {
+  format = "T: %degrees °C"
+}
+
+disk "/" {
+  format = "%avail"
+}
+
+disk "/home" {
+  format = "%avail"
+}
