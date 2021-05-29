@@ -15,5 +15,6 @@
 
     ".config/dunst/dunstrc".source = ./dunstrc;
     ".config/i3status/config".source = ./i3statusconf;
+    ".config/alacritty/alacritty.yml".source = ./alacrittyconf;
   };
 }

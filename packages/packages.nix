@@ -19,6 +19,7 @@
     fzf
     unzip
     termite
+    alacritty
     gnumake
 
     # Linters and formatters
