@@ -50,6 +50,8 @@
     scrot
     nomacs
     gv
+    graphviz-nox
+    sxiv
 
     # Video Player
     vlc
