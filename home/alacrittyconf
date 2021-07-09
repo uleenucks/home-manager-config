@@ -9,7 +9,7 @@ scrolling:
   history: 10000
 font:
   family: monospace
-  size: 6.0
+  size: 8.0
 colors:
   background: '#1b2b34'
   foreground: 'c0c5ce'
