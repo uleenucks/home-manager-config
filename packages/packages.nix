@@ -21,6 +21,7 @@
     termite
     alacritty
     gnumake
+    gptfdisk
 
     # Linters and formatters
     shellcheck
