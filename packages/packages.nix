@@ -26,6 +26,7 @@
     # Linters and formatters
     shellcheck
     nixfmt
+    nix-prefetch-github
 
     # Network diagnostics
     nmap

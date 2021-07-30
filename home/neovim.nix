@@ -1,43 +1,43 @@
 { config, pkgs, ... }:
 
 let customPlugins = {
-  oceanic_next = pkgs.vimUtils.buildVimPlugin {
+  oceanic_next = pkgs.vimUtils.buildVimPluginFrom2Nix {
     name = "oceanicnext";
     src = pkgs.fetchFromGitHub {
-      owner = "mhartingtion";
+      owner = "mhartington";
       repo = "oceanic-next";
       rev = "5ef31a34204f84714885ae9036f66a626036c3dc";
       sha256 = "1wazbyxaq71mlpyvyxrbrpyb9vgkcsj2y2zf1sba9gfjjszph482";
     };
   };
-  airline = pkgs.vimUtils.buildVimPlugin {
+  airline = pkgs.vimUtils.buildVimPluginFrom2Nix {
     name = "airline";
     src = pkgs.fetchFromGitHub {
       owner = "vim-airline";
       repo = "vim-airline";
       rev = "b861f9d2483a8b066f7b5b4dbae8990ff21455c5";
-      sha256 = "0hi4yvd5b8il63a42kk10hxc8ixb1khf8h8q601qipkvgla8mpiy";
+      sha256 = "0rz7p95ks4ymdwz7aqahc782msdz70qx25807cwvqh1gc9x887vq";
     };
   };
-  airline_theme = pkgs.vimUtils.buildVimPlugin {
+  airline_theme = pkgs.vimUtils.buildVimPluginFrom2Nix {
     name = "airline_theme";
     src = pkgs.fetchFromGitHub {
       owner = "vim-airline";
       repo = "vim-airline-themes";
       rev = "97cf3e6e638f936187d5f6e9b5eb1bdf0a4df256";
-      sha256 = "02dq887676dq2rm1fxpzf3piyabs6zj0rvc70nxa5vvlv68qp6k7";
+      sha256 = "0cbxjb1q7xlxykzq4ab4n3ny768ysf97f7h7d9spfmw286j3c2wi";
     };
   };
-  vim_nix = pkgs.vimUtils.buildVimPlugin {
+  vim_nix = pkgs.vimUtils.buildVimPluginFrom2Nix {
     name = "vim-nix";
     src = pkgs.fetchFromGitHub {
       owner = "LnL7";
       repo = "vim-nix";
       rev = "63b47b39c8d481ebca3092822ca8972e08df769b";
-      sha256 = "1kgziwckdjg3sb1z4anwsn1c72hny60vhimxpb6424bylk1qy22j";
+      sha256 = "08n9cgphv2m96kk5w996lwlqak011x5xm410hajmc91vy5fws361";
     };
   };
-  securemodelines = pkgs.vimUtils.buildVimPlugin {
+  securemodelines = pkgs.vimUtils.buildVimPluginFrom2Nix {
     name = "securemodelines";
     src = pkgs.fetchFromGitHub {
       owner = "ciaranm";
@@ -46,16 +46,16 @@ let customPlugins = {
       sha256 = "0iv30pdy8gdzjy49xd74a6lyygg6mnrjs2x6q52cz1m84qnimibl";
     };
   };
-  devicons = pkgs.vimUtils.buildVimPlugin {
+  devicons = pkgs.vimUtils.buildVimPluginFrom2Nix {
     name = "vim-devicons";
     src = pkgs.fetchFromGitHub {
       owner = "ryanoasis";
       repo = "vim-devicons";
       rev = "aa13718e367c44d27a784291a546923eb562fd2a";
-      sha256 = "00n818s7wy39gkpfwq5l8awg2qpzi4gj5s16hyrlrlyklrpgl48g";
+      sha256 = "0vvdjqickp1c13ixkams6yayqasrz05r6bqqfb4qbwpqmispvwkl";
     };
   };
-  indentline = pkgs.vimUtils.buildVimPlugin {
+  indentline = pkgs.vimUtils.buildVimPluginFrom2Nix {
     name = "indentLine";
     src = pkgs.fetchFromGitHub {
       owner = "Yggdroot";
@@ -64,7 +64,7 @@ let customPlugins = {
       sha256 = "1ns3v4r5m6ckchmkaqkpk8dymh7hwj22d7x23hagmk4zv4hc2mhq";
     };
   };
-  better_whitespace = pkgs.vimUtils.buildVimPlugin {
+  better_whitespace = pkgs.vimUtils.buildVimPluginFrom2Nix {
     name = "vim-better-whitespace";
     src = pkgs.fetchFromGitHub {
       owner = "ntpeters";
