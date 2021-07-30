@@ -6,7 +6,7 @@ let customPlugins = {
     src = pkgs.fetchFromGitHub {
       owner = "mhartingtion";
       repo = "oceanic-next";
-      rev = "master";
+      rev = "5ef31a34204f84714885ae9036f66a626036c3dc";
       sha256 = "1wazbyxaq71mlpyvyxrbrpyb9vgkcsj2y2zf1sba9gfjjszph482";
     };
   };
@@ -15,7 +15,7 @@ let customPlugins = {
     src = pkgs.fetchFromGitHub {
       owner = "vim-airline";
       repo = "vim-airline";
-      rev = "master";
+      rev = "b861f9d2483a8b066f7b5b4dbae8990ff21455c5";
       sha256 = "0hi4yvd5b8il63a42kk10hxc8ixb1khf8h8q601qipkvgla8mpiy";
     };
   };
@@ -24,7 +24,7 @@ let customPlugins = {
     src = pkgs.fetchFromGitHub {
       owner = "vim-airline";
       repo = "vim-airline-themes";
-      rev = "master";
+      rev = "97cf3e6e638f936187d5f6e9b5eb1bdf0a4df256";
       sha256 = "02dq887676dq2rm1fxpzf3piyabs6zj0rvc70nxa5vvlv68qp6k7";
     };
   };
@@ -33,7 +33,7 @@ let customPlugins = {
     src = pkgs.fetchFromGitHub {
       owner = "LnL7";
       repo = "vim-nix";
-      rev = "master";
+      rev = "63b47b39c8d481ebca3092822ca8972e08df769b";
       sha256 = "1kgziwckdjg3sb1z4anwsn1c72hny60vhimxpb6424bylk1qy22j";
     };
   };
@@ -42,7 +42,7 @@ let customPlugins = {
     src = pkgs.fetchFromGitHub {
       owner = "ciaranm";
       repo = "securemodelines";
-      rev = "master";
+      rev = "9751f29699186a47743ff6c06e689f483058d77a";
       sha256 = "0iv30pdy8gdzjy49xd74a6lyygg6mnrjs2x6q52cz1m84qnimibl";
     };
   };
@@ -51,7 +51,7 @@ let customPlugins = {
     src = pkgs.fetchFromGitHub {
       owner = "ryanoasis";
       repo = "vim-devicons";
-      rev = "v0.11.0";
+      rev = "aa13718e367c44d27a784291a546923eb562fd2a";
       sha256 = "00n818s7wy39gkpfwq5l8awg2qpzi4gj5s16hyrlrlyklrpgl48g";
     };
   };
@@ -60,7 +60,7 @@ let customPlugins = {
     src = pkgs.fetchFromGitHub {
       owner = "Yggdroot";
       repo = "indentLine";
-      rev = "master";
+      rev = "5617a1cf7d315e6e6f84d825c85e3b669d220bfa";
       sha256 = "1ns3v4r5m6ckchmkaqkpk8dymh7hwj22d7x23hagmk4zv4hc2mhq";
     };
   };
@@ -69,7 +69,7 @@ let customPlugins = {
     src = pkgs.fetchFromGitHub {
       owner = "ntpeters";
       repo = "vim-better-whitespace";
-      rev = "master";
+      rev = "8cf4b2175dd61416c2fe7d3234324a6c59d678de";
       sha256 = "1iga1xdzygnr9rhv0kw01nr3vahl2d486p06slmri2vy8ngzym0q";
     };
   };

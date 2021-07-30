@@ -53,6 +53,8 @@
     gv
     graphviz-nox
     sxiv
+    exif
+    exiftool
 
     # Video Player
     vlc
