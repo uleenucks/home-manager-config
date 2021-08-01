@@ -107,6 +107,12 @@ in {
           dbus-update-activation-environment DISPLAY XAUTHORITY
         fi
 
+        xrandr --setmonitor LEFT 1920/294x1080/165+0+0 eDP-1
+        xrandr --setmonitor VIRT-LEFT 1720/800x1440/335+1920+0 DP-1
+        xrandr --setmonitor VIRT-RIGHT-TOP 1720/400x720/168+3640+0 none
+        xrandr --setmonitor VIRT-RIGHT-BOT 1720/400x720/167+3640+720 none
+        xrandr --output DP-1 --auto
+
         startdwm
       '';
     scriptPath = ".xinitrc";
